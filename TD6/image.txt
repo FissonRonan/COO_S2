@@ -1,0 +1,1 @@
+@startuml'''classesclass Lampe{  - nom : String  - allume : boolean  + Lampe(nom)  + allumer()  + eteindre()  + toString()}class Telecomande{  - lampes : ArrayListe<Lampe>  + Telecomande()  + ajouterLampe(Lampe)  + activerLampe(indiceLampe)  + desactiverLampre(indiceLampe)  + activerTout()  + toString()}'''relationsTelecomande "1" --> "*" Lampe@enduml
